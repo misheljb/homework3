@@ -29,10 +29,31 @@ generateBtn.addEventListener("click", function (event) {
         alert ("Please choose number between 8 and 128 characters")
       } else {
         var addNumbers = confirm("Would you like to add numbers?")
-      if (addNumbers) {
-        passwordoptions.concat(numbers)
+      if (addNumbers ===true) {
+        passwordoptions = passwordoptions.concat(numbers)
+        console.log(passwordoptions)
+
+
       }
-    
+      var addSpecialcharacters = confirm("Would you like to add Special Characters?")
+      if (addSpecialcharacters ===true) {
+        passwordoptions = passwordoptions.concat(specialcharacters)
+        console.log(passwordoptions)
+
+
+      }var addUC = confirm("Would you like to add Upper Case letters?")
+      if (addUC ===true) {
+        passwordoptions = passwordoptions.concat(uppercase)
+        console.log(passwordoptions)
+
+
+      }var addLC = confirm("Would you like to add Lower Case letters?")
+      if (addLC ===true) {
+        passwordoptions = passwordoptions.concat(lowercase)
+        console.log(passwordoptions)
+
+
+      }
     
     
     }
